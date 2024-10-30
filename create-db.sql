@@ -1,48 +1,46 @@
-create table entrenadores (
-    ENTRENADORID int primary key auto_increment NOT NULL,
-    NOMBRE text NOT NULL,
-    APELLIDO text NOT NULL,
-    CORREO text NOT NULL,
-    CONTRASENA text NOT NULL,
-    TELEFONO VARCHAR(10) NOT NULL,
-    PRECIOS DECIMAL,
-    DEPORTE_ESPECIFICO TEXT,
-    UBICACION TEXT,
-    ABOUT_ME TEXT
+BEGIN;
+
+CREATE TABLE entrenadores (
+    entrenadorid SERIAL PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    apellido TEXT NOT NULL,
+    correo TEXT NOT NULL,
+    contrasena TEXT NOT NULL,
+    telefono VARCHAR(10) NOT NULL,
+    precios DECIMAL,
+    deporte_especifico TEXT,
+    ubicacion TEXT,
+    about_me TEXT
 );
 
-create table alumnos (
-    ALUMNOID int primary key auto_increment NOT NULL,
-    NOMBRE text NOT NULL,
-    APELLIDO text NOT NULL,
-    CORREO text NOT NULL,
-    CONTRASENA text NOT NULL,
-    TELEFONO VARCHAR(10) NOT NULL,
-    DEPORTE_INTERES TEXT,
-    UBICACION TEXT,
-    ABOUT_ME TEXT
+CREATE TABLE alumnos (
+    alumnoid SERIAL PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    apellido TEXT NOT NULL,
+    correo TEXT NOT NULL,
+    contrasena TEXT NOT NULL,
+    telefono VARCHAR(10) NOT NULL,
+    deporte_interes TEXT,
+    ubicacion TEXT,
+    about_me TEXT
 );
 
-create table eventos (
-    EVENTOID int primary key auto_increment NOT NULL,
-    NOMBRE text NOT NULL,
-    DESCRIPCION text NOT NULL,
-    FECHA date NOT NULL,
-    HORA time NOT NULL,
-    UBICACION text NOT NULL,
-    PRECIOS DECIMAL,
-    DEPORTE_ESPECIFICO TEXT,
-    INSTRUCTORID INTEGER,
-    foreign key (ENTRENADORID) references ENTRENADORES(ENTRENADORID)
+CREATE TABLE eventos (
+    eventoid SERIAL PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    descripcion TEXT NOT NULL,
+    fecha DATE NOT NULL,
+    hora TIME NOT NULL,
+    ubicacion TEXT NOT NULL,
+    precios DECIMAL,
+    deporte_especifico TEXT,
+    entrenadorid INTEGER REFERENCES entrenadores(entrenadorid)
 );
 
-create table asistencias (
-    ASISTENCIAID int primary key auto_increment NOT NULL,
-    ALUMNOID INTEGER,
-    EVENTOID INTEGER,
-    foreign key (ALUMNOID) references ALUMNO(ALUMNOID),
-    foreign key (EVENTOID) references EVENTOS(EVENTOID)
+CREATE TABLE asistencias (
+    asistenciaid SERIAL PRIMARY KEY,
+    alumnoid INTEGER REFERENCES alumnos(alumnoid),
+    eventoid INTEGER REFERENCES eventos(eventoid)
 );
 
-
-
+COMMIT;
