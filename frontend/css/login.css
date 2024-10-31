@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle at center, #411073, #0d0d0d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.login {
+    background-color: transparent ;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 8px 20px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+section.login:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px #d923ba;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #d923ba
+}
+
+.login-form input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.forms-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;  
+}
+
+.forms-actions button {
+    width: 100%;
+    padding: 0px;
+    border: none;
+    border-radius: 100px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-actions button:hover {
+    background-color: #d923ba;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-actions button:active {
+    transform: translateY(0);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-form label {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+
+.extra-links {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8); 
+}
+
+.extra-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.extra-links a:hover {
+    color: #d923ba;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 30px; 
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8f7f4;
+}
+
+header:hover {
+    transform: scale(1.2);
+    text-shadow: 3px 3px 10px #d923ba;
+}

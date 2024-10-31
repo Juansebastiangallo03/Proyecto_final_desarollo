@@ -1,0 +1,197 @@
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #411073, #0d0d0d), url('../recursos/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sección de registro */
+section.register {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 8px 20px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.register:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px #d923ba;
+}
+
+/* Formulario */
+.register-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs y textarea */
+.register-form input,
+.register-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #d923ba;
+    transition: box-shadow 0.3s ease;
+}
+
+.register-form textarea {
+    border-radius: 15px;
+    resize: none;
+}
+
+.register-form input:focus,
+.register-form textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Botones y acciones */
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    grid-column: span 2;
+}
+
+.form-actions button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-actions button:hover {
+    background-color: #d923ba;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-actions button:active {
+    transform: translateY(0);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels */
+.register-form label {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos adicionales para ¿Eres entrenador? y Precio por hora */
+.trainer-toggle {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trainer-toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.trainer-field {
+    grid-column: span 2;
+}
+
+/* Links */
+.extra-links {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.extra-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.extra-links a:hover {
+    color: #d923ba;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8f7f4;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+header:hover {
+    transform: scale(1.2);
+    text-shadow: 3px 3px 10px #d923ba;
+}
+
+/* Estilos adicionales para ¿Eres entrenador? y Precio por hora */
+.trainer-toggle {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.trainer-toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.trainer-field {
+    grid-column: span 2;
+}
