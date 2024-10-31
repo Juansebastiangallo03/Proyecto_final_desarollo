@@ -48,7 +48,8 @@
                     <input type="text" id="location" name="location" placeholder="Ingresa tu ubicación" required/>
                 </div>
 
-                <div class="form-group">
+                <!-- Campo de deporte de interés (visible por defecto) -->
+                <div class="form-group" id="sport-interest-field">
                     <label for="sport-interest">Actividad deportiva de interés</label>
                     <input type="text" id="sport-interest" name="sport-interest" placeholder="Ejemplo: Fútbol, Natación, etc." required/>
                 </div>
@@ -56,6 +57,23 @@
                 <div class="form-group">
                     <label for="about-me">Acerca de mí</label>
                     <textarea id="about-me" name="about-me" rows="4" placeholder="Cuéntanos algo sobre ti"></textarea>
+                </div>
+
+                <!-- Nuevo botón para seleccionar si es entrenador -->
+                <div class="form-group trainer-toggle">
+                    <label for="is-trainer">¿Eres entrenador?</label>
+                    <input type="checkbox" id="is-trainer" name="is-trainer" />
+                </div>
+
+                <!-- Campo de deporte enfocado y precio por hora (ocultos por defecto) -->
+                <div class="form-group" id="focused-sport-field" style="display: none;">
+                    <label for="focused-sport"> Deporte enfocado </label>
+                    <input type="text" id="focused-sport" name="focused-sport" placeholder="Ejemplo: Fútbol, Natación, etc." />
+                </div>
+
+                <div class="form-group" id="price-field" style="display: none;">
+                    <label for="price"> Precio por hora en $ </label>
+                    <input type="number" id="price" name="price" placeholder="Ejemplo: 50" min="0"/>
                 </div>
 
                 <div class="form-actions">
@@ -68,5 +86,8 @@
             </form>
         </section>
     </main>
+
+    <!-- Enlace al archivo JS externo -->
+    <script src="../frontend/js/sign-up.js"></script>
 </body>
 </html>

@@ -6,13 +6,14 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: radial-gradient(circle at center, #411073, #0d0d0d);
+    background: radial-gradient(circle at center, #411073, #0d0d0d), url('../recursos/background.jpg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+
 }
 
 main {
@@ -34,7 +35,7 @@ section.register {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px; /* Ampliado para mejor distribución */
+    width: 500px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -46,8 +47,8 @@ section.register:hover {
 /* Formulario */
 .register-form {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas */
-    gap: 15px; /* Espaciado entre campos */
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
     width: 100%;
 }
 
@@ -64,6 +65,7 @@ section.register:hover {
     border-radius: 30px;
     background-color: #ffffff;
     color: #d923ba;
+    transition: box-shadow 0.3s ease;
 }
 
 .register-form textarea {
@@ -84,7 +86,7 @@ section.register:hover {
     flex-direction: column;
     gap: 12px;
     width: 100%;
-    grid-column: span 2; /* Ocupa ambas columnas */
+    grid-column: span 2;
 }
 
 .form-actions button {
@@ -114,11 +116,28 @@ section.register:hover {
 
 /* Labels */
 .register-form label {
-    width: 100%;
     text-align: left;
     font-size: 16px;
     margin-bottom: 5px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos adicionales para ¿Eres entrenador? y Precio por hora */
+.trainer-toggle {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trainer-toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.trainer-field {
+    grid-column: span 2;
 }
 
 /* Links */
@@ -156,4 +175,23 @@ header {
 header:hover {
     transform: scale(1.2);
     text-shadow: 3px 3px 10px #d923ba;
+}
+
+/* Estilos adicionales para ¿Eres entrenador? y Precio por hora */
+.trainer-toggle {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.trainer-toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.trainer-field {
+    grid-column: span 2;
 }
