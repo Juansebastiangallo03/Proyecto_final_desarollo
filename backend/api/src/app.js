@@ -1,31 +1,32 @@
 import express from "express";
 import { setContentType } from "./middlewares/middleware.mjs";
-import { CourseRoutes } from "./routes/CourseRoutes.mjs";
-import { DegreeRoutes } from "./routes/DegreeRoutes.mjs";
-import { FacultyRoutes } from "./routes/FacultyRoutes.mjs";
-import { ProfessorRoutes } from "./routes/ProfessorRoutes.mjs";
-import { StudentRoutes } from "./routes/StudentRoutes.mjs";
+import { EntrenadorRoutes } from "./routes/EntrenadorRoutes.mjs";
+import { AlumnoRoutes } from "./routes/AlumnoRoutes.mjs";
+import { EventoRoutes } from "./routes/EventoRoutes.mjs";
+import { AsistenciaRoutes } from "./routes/AsistenciaRoutes.mjs";
 
 const app = express();
 app.use(express.json());
 app.use(setContentType);
 
-const courseRoutes = new CourseRoutes();
-const degreeRoutes = new DegreeRoutes();
-const facultyRoutes = new FacultyRoutes();
-const professorRoutes = new ProfessorRoutes();
-const studentRoutes = new StudentRoutes();
+// Inicialización de las rutas
+const entrenadorRoutes = new EntrenadorRoutes();
+const alumnoRoutes = new AlumnoRoutes();
+const eventoRoutes = new EventoRoutes();
+const asistenciaRoutes = new AsistenciaRoutes();
 
-app.use("/courses", courseRoutes.router);
-app.use("/degrees", degreeRoutes.router);
-app.use("/faculties", facultyRoutes.router);
-app.use("/professors", professorRoutes.router);
-app.use("/students", studentRoutes.router);
+// Uso de las rutas
+app.use("/entrenadores", entrenadorRoutes.router);
+app.use("/alumnos", alumnoRoutes.router);
+app.use("/eventos", eventoRoutes.router);
+app.use("/asistencias", asistenciaRoutes.router);
 
+// Manejo de rutas no encontradas
 app.all("*", (req, res) => {
   res.status(404).send(JSON.stringify({ message: "NO existe esa ruta" }));
 });
 
+// Iniciar el servidor
 app.listen(8080, () => {
   console.log("Servidor escuchando en el puerto 8080");
 });
