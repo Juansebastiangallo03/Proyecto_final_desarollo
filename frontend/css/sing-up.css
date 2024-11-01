@@ -6,7 +6,8 @@ html, body {
 }
 
 body {
-    background: radial-gradient(circle at center, #411073, #0d0d0d), url('../recursos/background.jpg');
+    background:url('../../recursos/background.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -27,7 +28,7 @@ main {
 /* Sección de registro */
 section.register {
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0px 8px 20px #ffffff;
