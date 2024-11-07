@@ -196,3 +196,10 @@ header:hover {
 .trainer-field {
     grid-column: span 2;
 }
+
+h2 {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #ffffff;
 }
 
 main {
@@ -74,11 +74,11 @@ section.login:hover {
     width: 100%;  
 }
 
-.forms-actions button {
+.form-actions button {
     width: 100%;
-    padding: 0px;
+    padding: 10px;
     border: none;
-    border-radius: 100px;
+    border-radius: 50px;
     background-color: #2c3e50;
     color: #fff;
     font-size: 16px;
@@ -140,4 +140,11 @@ header {
 header:hover {
     transform: scale(1.2);
     text-shadow: 3px 3px 10px #d923ba;
+}
+
+h2 {
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
