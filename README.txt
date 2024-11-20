@@ -1,1 +1,23 @@
-Proyecto: LETS TRAIN-El desarrollo de este proyecto consiste en crear una p‡gina web que permita a los usuarios encontrar personas o grupos para practicar cualquier tipo de deporte. Adem‡s, el sitio web contar‡ con un extenso portafolio de entrenadores que podr‡n registrar y ofrecer sus servicios. TambiŽn se publicar‡n eventos masivos como carreras y torneos que puedan resultar de gran interŽs. Todo esto estar‡ integrado en un sitio interactivo y din‡mico, dise–ado para ofrecer una experiencia fluida y atractiva para los usuarios.Funcionalidades:Registro: Los usuarios y entrenadores tendr‡n la posibilidad de registrarse para obtener u ofrecer servicios.Visualizaci—n de eventos: Los usuarios podr‡n ver una lista de pr—ximos eventos y confirmar su asistencia.Visualizaci—n de usuarios: Los usuarios encontraran en un apartado la informaci—n de interŽs para entrenar con alguien m‡s, tales como deporte que practica, zona de la ciudad en la que se encuentra, d’as y horas en el cual practica la actividad f’sica. Adem‡s de esto los podr‡ contactar a travŽs de su correo electr—nico.Contrataci—n de entrenadores personalizados: Una vez los entrenadores registren el servicio, los usuarios podr‡n ver la experiencia del entrenador, el deporte en el cual hace Žnfasis, precio y disponibilidad horaria para as’ poder escoger el que mejor se adapte a su necesidad.Tecnolog’as requeridas:-HTML-CSS-JavaScript-Node.js-SQL 
+Proyecto: LETS TRAIN
+-El desarrollo de este proyecto consiste en crear una pï¿½gina web que permita a los usuarios encontrar personas o grupos para practicar cualquier tipo de deporte. Ademï¿½s, el sitio web contarï¿½ con un extenso portafolio de entrenadores que podrï¿½n registrar y ofrecer sus servicios. Tambiï¿½n se publicarï¿½n eventos masivos como carreras y torneos que puedan resultar de gran interï¿½s. Todo esto estarï¿½ integrado en un sitio interactivo y dinï¿½mico, diseï¿½ado para ofrecer una experiencia fluida y atractiva para los usuarios.
+
+Funcionalidades:
+
+Registro: Los usuarios y entrenadores tendrï¿½n la posibilidad de registrarse para obtener u ofrecer servicios.
+
+Visualizaciï¿½n de eventos: Los usuarios podrï¿½n ver una lista de prï¿½ximos eventos y confirmar su asistencia.
+
+Visualizaciï¿½n de usuarios: Los usuarios encontraran en un apartado la informaciï¿½n de interï¿½s para entrenar con alguien mï¿½s, tales como deporte que practica, zona de la ciudad en la que se encuentra, dï¿½as y horas en el cual practica la actividad fï¿½sica. Ademï¿½s de esto los podrï¿½ contactar a travï¿½s de su correo electrï¿½nico.
+
+Contrataciï¿½n de entrenadores personalizados: Los usuarios podrï¿½n ver la experiencia del entrenador, el deporte en el cual hace ï¿½nfasis, precio y disponibilidad horaria para asï¿½ poder escoger el que mejor se adapte a su necesidad.
+
+Tecnologï¿½as requeridas:
+
+-HTML
+-CSS
+-JavaScript
+-Node.js
+-SQL 
+
+
+
