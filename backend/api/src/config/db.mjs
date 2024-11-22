@@ -32,6 +32,8 @@ class Db {
       await this.#client.connect();
       console.log(query);
       const resultados = await this.#client.query(query, values);
+      console.log('Resultados desde clase db:', resultados);
+      console.log('Resultados desde clase db .rows:', resultados.rows);
       return resultados;
     } catch (err) {
       console.log(err);

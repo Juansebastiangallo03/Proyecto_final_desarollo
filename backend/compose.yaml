@@ -5,12 +5,14 @@ services:
     env_file:
       - ./api/.env
     ports:
-      - 8081:8080
+      - 5432:5432
   
   db:
     build: db
     env_file:
-      - ./db/.env
+      - ../db/.env
+    volumes:
+      - db_data:/var/lib/postgresql/data
   
   pgadmin:
     image: dpage/pgadmin4
@@ -18,3 +20,6 @@ services:
       - 80:80
     env_file:
       - .env
+
+volumes:
+  db_data: test

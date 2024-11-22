@@ -5,6 +5,7 @@ class EntrenadorService {
   getAll = async () => {
     try {
       const results = await new Db().selectQuery("SELECT * FROM entrenadores");
+      console.log('Resultado del query:', results);
       return results.rows.map((row) => Entrenador.fromObject(row));
     } catch (error) {
       console.log("Error al listar entrenadores:", error);

@@ -20,6 +20,7 @@ app.use("/entrenadores", entrenadorRoutes.router);
 app.use("/alumnos", alumnoRoutes.router);
 app.use("/eventos", eventoRoutes.router);
 app.use("/asistencias", asistenciaRoutes.router);
+app.get("/", (req, res) => res.send("Bienvenido a la API"));
 
 // Manejo de rutas no encontradas
 app.all("*", (req, res) => {
@@ -27,6 +28,6 @@ app.all("*", (req, res) => {
 });
 
 // Iniciar el servidor
-app.listen(8080, () => {
-  console.log("Servidor escuchando en el puerto 8080");
+app.listen(5432, () => {
+  console.log("Servidor escuchando en el puerto 5432");
 });

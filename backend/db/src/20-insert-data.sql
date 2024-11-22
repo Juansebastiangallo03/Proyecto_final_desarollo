@@ -46,3 +46,8 @@ INSERT INTO eventos (nombre, descripcion, fecha, hora, ubicacion, precios, depor
 ('Escalada en Roca', 'Día de escalada en roca para todos', '2024-11-30', '07:30:00', 'Calle 10A #34-56, El Poblado', 20.00, 'Escalada', 11),
 ('Torneo de Rugby', 'Competencia de rugby entre colegios', '2024-12-08', '14:00:00', 'Calle 33 #76-20, Laureles', 12.00, 'Rugby', 12),
 ('Clínica de Atletismo', 'Mejora tu técnica de carrera', '2024-11-05', '17:00:00', 'Calle 51 #29-30, Pedregal', 18.00, 'Atletismo', 10);
+
+
+SELECT * FROM alumnos;
+SELECT * FROM entrenadores;
+SELECT * FROM eventos;
